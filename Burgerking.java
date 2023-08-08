@@ -10,13 +10,13 @@ public class Main {
         int priceNonVegBurger = 125;
         int priceTikkiBurger = 112;
 
-        int maxProfit = getMaxProfit(breads, vegPattice, nonVegPattice, tikkiPattice,
+        int maxProfit = solution(breads, vegPattice, nonVegPattice, tikkiPattice,
                 priceVegBurger, priceNonVegBurger, priceTikkiBurger);
 
-        System.out.println("Maximum Possible Profit: " + maxProfit);
+        System.out.println( maxProfit);
     }
 
-    public static int getMaxProfit(int breads, int vegPattice, int nonVegPattice, int tikkiPattice,
+    public static int solution(int breads, int vegPattice, int nonVegPattice, int tikkiPattice,
                                    int priceVegBurger, int priceNonVegBurger, int priceTikkiBurger) {
         int[] dp = new int[breads + 1];
 
